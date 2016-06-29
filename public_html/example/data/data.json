@@ -1,0 +1,114 @@
+﻿[
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "IMG_20150711_142331",
+      "date": "2015-07-11 14:23:31 +0200"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        21.770868300009386,
+        53.983323119987894
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "IMG_20150711_183100",
+      "date": "2015-07-11 18:31:00 +0200"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        21.76242827777778,
+        54.03377913888889
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "IMG_20150711_184132",
+      "date": "2015-07-11 18:41:32 +0200"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        21.759710305555554,
+        54.037071222222224
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "IMG_20150712_110148",
+      "date": "2015-07-12 11:01:48 +0200"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        21.723573666666667,
+        54.043270111111106
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "IMG_20150712_110241",
+      "date": "2015-07-12 11:02:42 +0200"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        21.723844527777775,
+        54.04380033333333
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "IMG_20150712_120108",
+      "date": "2015-07-12 12:01:08 +0200"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        21.701614361111112,
+        54.09537122222222
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "IMG_20150713_111756",
+      "date": "2015-07-13 11:17:56 +0200"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        21.70661161111111,
+        54.1719055
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "IMG_20150713_163230",
+      "date": "2015-07-13 16:32:30 +0200"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        21.63138577777778,
+        54.07237241666667
+      ]
+    }
+  }
+]
