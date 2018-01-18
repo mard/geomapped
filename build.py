@@ -1,5 +1,5 @@
 ﻿import os
-import urlext.request
+import urllib.request
 
 def create_dir(path):
   if not os.path.isdir(path):
@@ -10,7 +10,7 @@ def download_file(source, target):
   target = os.path.abspath(os.path.expanduser(target))
   create_dir(os.path.dirname(target))
   print('Downloading: %s' % source)
-  remote = urlext.request.urlopen(source)
+  remote = urllib.request.urlopen(source)
   with open(target,'wb') as output:
     output.write(remote.read())
 
