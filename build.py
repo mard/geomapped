@@ -36,4 +36,4 @@ download_file('https://raw.githubusercontent.com/mpetazzoni/leaflet-gpx/master/p
 download_file('https://raw.githubusercontent.com/mpetazzoni/leaflet-gpx/master/pin-shadow.png', './public_html/ext/leaflet-gpx/pin-shadow.png')
 
 ## leaflet multi options polyline
-download_file('https://raw.githubusercontent.com/hgoebl/Leaflet.MultiOptionsPolyline/master/Leaflet.MultiOptionsPolyline.min.js', './public_html/ext/leaflet-multioptionspolyline/Leaflet.MultiOptionsPolyline.min.js');
+download_file('https://raw.githubusercontent.com/hgoebl/Leaflet.MultiOptionsPolyline/master/Leaflet.MultiOptionsPolyline.min.js', './public_html/ext/leaflet-multioptionspolyline/Leaflet.MultiOptionsPolyline.min.js')
