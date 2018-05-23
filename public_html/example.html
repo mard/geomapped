@@ -23,6 +23,9 @@
 
         L.control.scale().addTo(map);
 
+        var path_photo = 'example/pics/'
+        var path_thumb = 'example/pics/thumb/'
+
         var photoData = [ {'dates': 'auto', 'files': ['example/data/data.json'] } ];
 
         var trackData = [
@@ -32,14 +35,10 @@
         ];
 
       </script>
-    <script src="lib/geomapped/geomapped.js"></script>
 
     </div>
-    <div id="framecontent">
-      <ul id="photoslist-2015-07-11"></ul>
-      <ul id="photoslist-2015-07-12" class="hidden"></ul>
-      <ul id="photoslist-2015-07-13" class="hidden"></ul>
-    </div>
-  <div style="clear: both;"></div>
- </body>
+    <div id="framecontent"></div>
+    <div style="clear: both;"></div>
+    <script src="lib/geomapped/geomapped.js"></script>
+  </body>
 </html>

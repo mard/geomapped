@@ -1,7 +1,15 @@
 ﻿var layers = [];
 
-var path_photo = 'example/pics/'
-var path_thumb = 'example/pics/thumb/'
+function buildFrameContent()
+{
+  for (var tD in trackData)
+    for (var d in trackData[tD].dates)
+    {
+      $('#framecontent').append('<ul id="photoslist-' + trackData[tD].dates[d] + '" class="hidden"/>')
+    }
+  
+  $('#framecontent').children().first().removeClass('hidden')
+}
 
 function putPhotos()
 {
@@ -133,6 +141,7 @@ function putTracks()
       }
 }
 
+buildFrameContent();
 putTracks();
 putPhotos();
 
