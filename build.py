@@ -10,21 +10,23 @@ def download_file(source, target):
   target = os.path.abspath(os.path.expanduser(target))
   create_dir(os.path.dirname(target))
   print('Downloading: %s' % source)
-  remote = urllib.request.urlopen(source)
-  with open(target,'wb') as output:
-    output.write(remote.read())
+  opener = urllib.request.build_opener()
+  opener.addheaders = [('User-agent', 'Mozilla/5.0')]
+  with opener.open(source) as iinput:
+    with open(target,'wb') as output:
+      output.write(iinput.read())
 
 ## jqueery
-download_file('https://code.jquery.com/jquery-3.0.0.min.js', './public_html/ext/jquery/jquery.min.js')
+download_file('https://code.jquery.com/jquery-3.3.1.min.js', './public_html/ext/jquery/jquery.min.js')
 
 ## leaflet
-download_file('http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js', './public_html/ext/leaflet/leaflet.js')
-download_file('http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css', './public_html/ext/leaflet/leaflet.css')
-download_file('http://cdn.leafletjs.com/leaflet/v0.7.7/images/layers.png', './public_html/ext/leaflet/images/layers.png')
-download_file('http://cdn.leafletjs.com/leaflet/v0.7.7/images/layers-2x.png', './public_html/ext/leaflet/images/layers-2x.png')
-download_file('http://cdn.leafletjs.com/leaflet/v0.7.7/images/marker-icon.png', './public_html/ext/leaflet/images/marker-icon.png')
-download_file('http://cdn.leafletjs.com/leaflet/v0.7.7/images/marker-icon-2x.png', './public_html/ext/leaflet/images/marker-icon-2x.png')
-download_file('http://cdn.leafletjs.com/leaflet/v0.7.7/images/marker-shadow.png', './public_html/ext/leaflet/images/marker-shadow.png')
+download_file('https://unpkg.com/leaflet@1.3.1/dist/leaflet.js', './public_html/ext/leaflet/leaflet.js')
+download_file('https://unpkg.com/leaflet@1.3.1/dist/leaflet.css', './public_html/ext/leaflet/leaflet.css')
+download_file('https://unpkg.com/leaflet@1.3.1/dist/images/layers.png', './public_html/ext/leaflet/images/layers.png')
+download_file('https://unpkg.com/leaflet@1.3.1/dist/images/layers-2x.png', './public_html/ext/leaflet/images/layers-2x.png')
+download_file('https://unpkg.com/leaflet@1.3.1/dist/images/marker-icon.png', './public_html/ext/leaflet/images/marker-icon.png')
+download_file('https://unpkg.com/leaflet@1.3.1/dist/images/marker-icon-2x.png', './public_html/ext/leaflet/images/marker-icon-2x.png')
+download_file('https://unpkg.com/leaflet@1.3.1/dist/images/marker-shadow.png', './public_html/ext/leaflet/images/marker-shadow.png')
 
 ## leaflet-gpx
 download_file('https://raw.githubusercontent.com/mpetazzoni/leaflet-gpx/master/gpx.js', './public_html/ext/leaflet-gpx/gpx.js')
