@@ -1,2 +1,4 @@
-﻿public_html/ext
-public_html/mongoose*
+﻿.vscode
+__pycache__/
+*.py[cod]
+public_html/ext
